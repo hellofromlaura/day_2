@@ -1,0 +1,15 @@
+<script type="text/javascript">
+	
+
+	function createGreeter(greeting) {
+		return function aName(name) {
+			console.log(greeting +" " + name);
+		}
+	}
+ 
+ createGreeter("Hello")('Anna');
+
+ createGreeter("Bonjour")('Sofia');
+
+
+</script>
