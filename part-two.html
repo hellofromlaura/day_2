@@ -1,0 +1,30 @@
+<script>
+
+var array = [12, 34, 55, 111];
+
+function average(numbers) {
+    var average = numbers[0];
+    var count = numbers.length;
+    var i=0;
+    var sum = 0;
+    while (i < numbers.length) {
+         sum += numbers[i];
+         i++;
+    }
+    return sum / count;
+}
+
+  console.log(average(array));
+
+
+var sum = 0;
+var total = 0;
+array.forEach(
+    function addNumber(value) {
+        sum += value;
+        total = sum /array.length;
+    }
+)
+
+console.log(total);
+</script>
