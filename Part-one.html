@@ -1,0 +1,40 @@
+<script type="text/javascript">
+
+// Redo the "max and min (without sort or Math.max/min)" drill but this time use a while loop instead of a for loop  
+
+var numbers = [12, 34, 112, 56, 78];
+
+function max(numbers) {
+  var max = numbers[0];
+  var i = 1;
+  while (i < numbers.length) {
+  i++;
+    if (max < numbers[i]) {
+      max = numbers[i];
+    }
+  }
+  return max;
+}
+console.log(max(numbers));
+
+function min(numbers) {
+  var min = numbers[0];
+  var i = 1;
+  while (i < numbers.length) {
+  i++;
+    if (min > numbers[i]) {
+      min = numbers[i];
+    }
+  }
+  return min;
+}
+console.log(min(numbers));
+
+
+
+</script>
+
+Redo "Compute the average" exercise but this use a while loop instead of a for loop
+Bonus Tasks: Try the Array.forEach() method.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+Redo the "Fizz Buzz" drill" if you used if/else last time, then try switch statement this time.
